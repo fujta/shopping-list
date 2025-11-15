@@ -1,0 +1,52 @@
+.controlsContainer {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.inputField {
+    flex-grow: 1;
+    padding: 10px 14px;
+    border: 1px solid var(--button-secondary-border);
+    border-radius: 8px;
+    background-color: var(--foreground);
+    color: var(--text-primary);
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.inputField:focus {
+    outline: none;
+    border-color: #646cff;
+}
+
+.controlButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--button-secondary-border);
+    background-color: var(--foreground);
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.controlButton:hover {
+    background-color: var(--table-row-hover);
+    border-color: #646cff;
+}
+
+.primaryButton {
+    background-color: #646cff;
+    color: white;
+    border-color: #646cff;
+}
+
+.primaryButton:hover {
+    background-color: #535bf2;
+    border-color: #535bf2;
+}
