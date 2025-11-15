@@ -45,7 +45,7 @@ export const useShoppingListContext = () => {
     const context = useContext(ShoppingListContext);
     if (context === undefined) {
         throw new Error(
-            'useShoppingList must be used within a ShoppingListProvider'
+            'useShoppingListContext must be used within a ShoppingListProvider'
         );
     }
     return context;

@@ -32,15 +32,15 @@ export default function Home() {
 
     return (
         <main className="main">
-            <h1>Nákupní list</h1>
+            <h1>Nákupní seznam</h1>
 
             <TableControls />
 
             <table className="shoppingTable">
                 <thead>
                     <tr>
-                        <th>Item</th>
-                        <th className="tableActions">Actions</th>
+                        <th>Položky</th>
+                        <th className="tableActions">Akce</th>
                     </tr>
                 </thead>
 

@@ -5,7 +5,7 @@ import { Plus, List, Database, Server } from 'lucide-react';
 import styles from './TableControls.module.css';
 
 export const TableControls = () => {
-    const { handleInsertDemoData, handleLoadData, handleAddNewItem } =
+    const { handleInsertDemoData, handleAddNewItem } =
         useShoppingList();
     const itemNameInputRef = useRef<HTMLInputElement>(null);
 
@@ -23,7 +23,7 @@ export const TableControls = () => {
                 type="text"
                 ref={itemNameInputRef}
                 className={styles.inputField}
-                placeholder="Add new item..."
+                placeholder="Přidat novou položku..."
                 onKeyDown={(e) => e.key === 'Enter' && onAddNewItem()}
             />
             <button
@@ -31,12 +31,7 @@ export const TableControls = () => {
                 onClick={onAddNewItem}
             >
                 <Plus size={16} />
-                Add
-            </button>
-
-            <button className={styles.controlButton} onClick={handleLoadData}>
-                <List size={16} />
-                Load All
+                Přidat
             </button>
 
             <button
@@ -44,7 +39,7 @@ export const TableControls = () => {
                 onClick={handleInsertDemoData}
             >
                 <Database size={16} />
-                Demo Data
+                Přidat demo data
             </button>
 
             <button
@@ -52,7 +47,7 @@ export const TableControls = () => {
                 onClick={() => testServerFunction().then(console.log)}
             >
                 <Server size={16} />
-                Test Server
+                Otestovat server
             </button>
         </div>
     );
