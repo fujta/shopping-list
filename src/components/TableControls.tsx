@@ -35,6 +35,7 @@ export const TableControls = () => {
             </button>
 
             <button
+                disabled
                 className={styles.controlButton}
                 onClick={handleInsertDemoData}
             >
@@ -43,6 +44,7 @@ export const TableControls = () => {
             </button>
 
             <button
+                disabled
                 className={styles.controlButton}
                 onClick={() => testServerFunction().then(console.log)}
             >
