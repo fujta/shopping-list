@@ -11,7 +11,7 @@ export const TableControls = () => {
 
     const onAddNewItem = () => {
         const value = itemNameInputRef.current?.value;
-        if (value) {
+        if (value && itemNameInputRef.current) {
             handleAddNewItem(value);
             itemNameInputRef.current.value = '';
         }
